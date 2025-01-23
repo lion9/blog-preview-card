@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree-VariableFont_wght.ttf') format('woff2');
+    font-weight: 300 900; /* Variable font range */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('woff2');
+    font-weight: 300 900; /* Variable font range */
+    font-style: italic;
+}
+
+/* Outfit Font */
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/Outfit-VariableFont_wght.ttf') format('woff2');
+    font-weight: 100 900; /* Variable font range */
+    font-style: normal;
+}
+:root {
+    --yellow: #F4D04E;
+    --gray-950: #111111;
+    --gray-500: #6B6B6B;
+    --primary-text-clr: #111111;
+    --secondary-text-clr: #6B6B6B;
+    --background-card-clr: #FFFFFF;
+    --spacing-300: 24px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+}
+
+.text-preset-1 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+.text-preset-2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+.text-preset-3 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+.text-preset-3-extra-bold {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree';
+    height: 100vh;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 384px;
+    height: 522px;
+    background-color: var(--background-card-clr);
+    border-radius: 20px;
+    border: 1px solid var(--gray-950);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px;
+    box-shadow: 8px 9px 0px rgba(0, 0, 0, 1)
+}
+
+.card > img {
+    width: 100%;
+    max-width: 336px;
+    height: auto;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.author {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.author img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: var(--spacing-150);
+}
+
+.tag {
+    background-color: var(--yellow);
+    border-radius: 5px;
+    padding: 4px 12px;
+    margin: var(--spacing-300) 0 var(--spacing-150) 0;
+}
+
+.date {
+    margin-bottom: var(--spacing-150);
+    color: var(--gray-950)
+}
+
+h1 {
+    margin-bottom: var(--spacing-150);
+    color: var(--gray-950);
+}
+
+.description {
+    margin-bottom: var(--spacing-300);
+    color: var(--gray-500);
+}
